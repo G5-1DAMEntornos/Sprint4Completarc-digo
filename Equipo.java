@@ -23,3 +23,23 @@ public class Equipo {
 		return ranking;
 	}
 }
+	public String categoriaEquipo(String categoria, String primera,String segunda, String tercera) {
+
+
+		if(ranking>=7 && ranking<=10) {
+			categoria=primera;
+		}else if(ranking<=6 && ranking>=3){
+			categoria=segunda;
+
+		}
+		categoria=tercera;
+
+		if(nombreEquipo!=null && ranking!=0) {
+			return categoria;
+		}
+
+		return "error";
+
+	}
+
+}
