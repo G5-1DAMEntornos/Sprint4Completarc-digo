@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
-import static org.testng.Assert.assertEquals;
-import static org.testng.AssertJUnit.assertNull;
+
+import static org.junit.jupiter.api.Assertions.*;
 /**
  *
  * @author Bilal 
@@ -205,7 +205,7 @@ class EquipoTest {
 	}
 
 	@Test
-	void testSegundaCategoriaMáxima(){
+	void testSegundaCategoriaMaxima(){
 		Equipo equipo = new Equipo();
 		int rank=6;
 		String nombre = "equipo1";
