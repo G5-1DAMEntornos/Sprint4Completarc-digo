@@ -3,7 +3,7 @@ public class Equipo {
 	private int ranking;
 	
 	
-	public Equipo (String nombreEquipo, int ranking) {
+	public Equipo () {
 //		this.setNombreEquipo(nombreEquipo);
 //		this.setRanking(ranking);
 	}
@@ -22,23 +22,10 @@ public class Equipo {
 	public int getRanking() {
 		return ranking;
 	}
-}
-	public String categoriaEquipo(String categoria, String primera,String segunda, String tercera) {
 
-
-		if(ranking>=7 && ranking<=10) {
-			categoria=primera;
-		}else if(ranking<=6 && ranking>=3){
-			categoria=segunda;
-
-		}
-		categoria=tercera;
-
-		if(nombreEquipo!=null && ranking!=0) {
-			return categoria;
-		}
-
-		return "error";
+	public String categoriaEquipo() {
+	String categoria = "";
+       return categoria;
 
 	}
 

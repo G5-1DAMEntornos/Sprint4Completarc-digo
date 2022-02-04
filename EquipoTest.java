@@ -1,11 +1,6 @@
-import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
-/**
- *
- */
-
+import static org.testng.Assert.assertEquals;
+import static org.testng.AssertJUnit.assertNull;
 /**
  *
  * @author Bilal 
@@ -176,4 +171,83 @@ class EquipoTest {
 		//assertEquals(0,equipo.getRanking(),"El ranking del equipo no puede estar vacio");
 		assertNull(equipo.getRanking());
 	}
+
+	/**
+	 *
+	 * @author Paula
+	 *
+	 */
+
+	@Test
+	void testPrimeraCategoriaMaxima(){
+		Equipo equipo = new Equipo();
+		int rank=10;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("primera",equipo.categoriaEquipo());
+
+	}
+
+	@Test
+	void testPrimeraCategoriaMinima(){
+		Equipo equipo = new Equipo();
+		int rank=7;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("primera",equipo.categoriaEquipo());
+
+	}
+
+	@Test
+	void testSegundaCategoriaMáxima(){
+		Equipo equipo = new Equipo();
+		int rank=6;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("segunda",equipo.categoriaEquipo());
+
+	}
+
+	@Test
+	void testSegundaCategoriaMinima(){
+		Equipo equipo = new Equipo();
+		int rank=3;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("segunda",equipo.categoriaEquipo());
+
+	}
+
+	@Test
+	void testTerceraCategoriaMaxima(){
+		Equipo equipo = new Equipo();
+		int rank=2;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("tercera",equipo.categoriaEquipo());
+
+	}
+
+	@Test
+	void testTerceraCategoriaMinima(){
+		Equipo equipo = new Equipo();
+		int rank=0;
+		String nombre = "equipo1";
+		equipo.setRanking(rank);
+		equipo.setNombreEquipo(nombre);
+
+		assertEquals("tercera",equipo.categoriaEquipo());
+
+	}
+
 }
