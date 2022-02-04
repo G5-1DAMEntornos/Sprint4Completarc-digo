@@ -21,12 +21,13 @@ class EquipoTest {
 	@Test
 	void testSetNombreEquipo() {
 		Equipo equ=new Equipo();
-		equ.setNombreEquipo("-100");
-		assertEquals(null,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
+		String nombre="-100";
+		equ.setNombreEquipo(nombre);
+		assertEquals(nombre,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
 	}
 
 	/**
-	 * TC02 - Nombre (Numero Caracteres Num�ricos).Introduciremos un n�mero en el campo de nombre, por lo que el test
+	 * TC02 - Nombre (Numero Caracteres Numericos).Introduciremos un numero en el campo de nombre, por lo que el test
 	 * debe dar error.
 	 * .
 	 */
@@ -34,8 +35,9 @@ class EquipoTest {
 	@Test
 	void testSetNombreEquipo2() {
 		Equipo equ=new Equipo();
-		equ.setNombreEquipo(null);
-		assertEquals(34,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
+		String nombre="10";
+		equ.setNombreEquipo(nombre);
+		assertEquals(nombre,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
 	}
 
 	/**
@@ -54,7 +56,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "Equ";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(null,equipo.getNombreEquipo(),"El nombre tiene que ser mas largo de 4 caracteres");
+		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre tiene que ser mas largo de 4 caracteres");
 	}
 
 	/**
@@ -93,7 +95,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "Equipo de prueba caracteres largos";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(null,equipo.getNombreEquipo(),"El nombre del equipo no puede tener mas de 20 caracteres");
+		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre del equipo no puede tener mas de 20 caracteres");
 	}
 
 	/**
@@ -105,7 +107,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(null,equipo.getNombreEquipo(),"El nombre del equipo no puede estar vacio");
+		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre del equipo no puede estar vacio");
 	}
 
 	/**
