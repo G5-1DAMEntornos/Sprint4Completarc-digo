@@ -36,9 +36,13 @@ public class Equipo {
 	}
 	}
 	public void setRanking(int ranking) {
+
 		if(ranking >=0 && ranking <=10) {
 			this.ranking=ranking;
 		}
+
+		
+
 	}
 	
 	public String getNombreEquipo() {
@@ -48,6 +52,7 @@ public class Equipo {
 		return ranking;
 	}
 
+
 	public String categoriaEquipo(String categoria, String primera,String segunda, String tercera) {
 
 
@@ -55,16 +60,23 @@ public class Equipo {
 			categoria=primera;
 		}else if(ranking<=6 && ranking>=3){
 			categoria=segunda;
-
 		}
-		categoria=tercera;
-
-		if(nombreEquipo!=null && ranking!=0) {
-			return categoria;
-		}
-
-		return "error";
-
+		return categoria;
 	}
 
+
+
+	public String categoriaEquipo() {
+	String categoria = "";
+	   if(nombreEquipo!=null && ranking!=-1) {
+		   if (ranking < 3) {
+			   categoria = "tercera";
+		   } else if (ranking >= 3 && ranking <= 6) {
+				categoria = "segunda";
+		   }else if (ranking >= 7 && ranking <= 10) {
+			   categoria = "primera";
+		   }
+	   }
+       return categoria;
+	}
 }
