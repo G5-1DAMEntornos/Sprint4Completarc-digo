@@ -35,7 +35,7 @@ public class Jugador {
 
 	public void setIdioma(String idioma) {
 		
-		if (idioma.equalsIgnoreCase("espaÒol")  || idioma.equalsIgnoreCase("inglÈs")|| idioma.equalsIgnoreCase("francÈs")|| idioma.equalsIgnoreCase("alem·n" )
+		if (idioma.equalsIgnoreCase("espa√±ol")  || idioma.equalsIgnoreCase("ingl√©s")|| idioma.equalsIgnoreCase("franc√©s")|| idioma.equalsIgnoreCase("alem√°n" )
 				|| idioma.equalsIgnoreCase("ingles")|| idioma.equalsIgnoreCase("frances")|| idioma.equalsIgnoreCase("aleman")) {
 			this.idioma=idioma;
 
@@ -53,4 +53,21 @@ public class Jugador {
 	public int getEdad() {
 		return edad;
 	}
+	
+	 public String tipoJugador(int edad){
+        int ed=edad;
+        String tipo=null;
+        
+            if(18<=ed && ed<=24){
+                tipo="Junior";
+            }
+            if(25<=ed && ed<=35){
+            	tipo="Senior";
+            }
+            if(ed>35){
+            	tipo="Master";
+            }
+        return tipo;
+    }
+	
 }
