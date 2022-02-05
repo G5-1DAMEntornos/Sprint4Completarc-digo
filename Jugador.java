@@ -11,15 +11,19 @@ public class Jugador {
 
 	public void setNombreJugador(String nombre) {
 
-		if (nombre.length()>3 && nombre.length()<=20) {
-			this.nombre=nombre;
+		if (3<nombre.length() && nombre.length()<=20) {
+			
 
 			for(int i = 0 ; i <nombre.length() ; i++) {
 
 				if (!(nombre.toLowerCase().charAt(i)>='a' && nombre.toLowerCase().charAt(i)<='z')){
 					this.nombre=null;
+				}else {
+					this.nombre=nombre;
 				}
 			}
+		}else {
+			this.nombre=null;
 		}
 	}
 

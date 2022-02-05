@@ -20,7 +20,7 @@ class JugadorTest {
 		Jugador jugador = new Jugador();
 		String nombre= "hola2";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre, jugador.getNombreJugador(), "Carácter no permitido");
+		assertNull(jugador.getNombreJugador());
 		
 	}
 	
@@ -31,9 +31,9 @@ class JugadorTest {
 	@Test
 	void testSetNombreJugador2() {
 		Jugador jugador = new Jugador();
-		String nombre= "Pe";
+		String nombre="Pe";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre,jugador.getNombreJugador(),"Carácteres introducidos insuficientes");
+		assertNull(jugador.getNombreJugador());
 		
 		
 	}
@@ -59,7 +59,7 @@ class JugadorTest {
 		Jugador jugador = new Jugador();
 		String nombre= "PepePepePepePepePepe";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre, jugador.getNombreJugador(), "Carácteres introducidos insuficientes");
+		assertEquals(nombre, jugador.getNombreJugador(), "Caracteres introducidos insuficientes");
 		
 
 	}
@@ -72,8 +72,7 @@ class JugadorTest {
 		Jugador jugador = new Jugador();
 		String nombre= "PepePepePepePepePepeP";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre, jugador.getNombreJugador(), "Excedido número carácteres permitido");
-		
+		assertNull(jugador.getNombreJugador());		
 		
 	}
 	
@@ -85,7 +84,7 @@ class JugadorTest {
 		Jugador jugador = new Jugador();
 		String nombre= "Pepe34";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre, jugador.getNombreJugador(), "Carácteres númericos no permitidos");
+		assertNull(jugador.getNombreJugador());
 		
 		
 	}
@@ -97,7 +96,7 @@ class JugadorTest {
 		Jugador jugador = new Jugador();
 		String nombre= " ";
 		jugador.setNombreJugador(nombre);
-		assertEquals(nombre, jugador.getNombreJugador(), "Campo nombre vacio");
+		assertNull(jugador.getNombreJugador());
 		
 	}
 	/**
@@ -123,7 +122,7 @@ guardado en mayusculas
 		Jugador jugador = new Jugador();
 		int edad= 18;
 		jugador.setEdad(edad);
-		assertEquals(edad, jugador.getEdad(), "Carácter no válido");
+		assertEquals(edad, jugador.getEdad(), "Caracter no valido");
 		
 	}
 	
@@ -135,7 +134,7 @@ guardado en mayusculas
 		Jugador jugador = new Jugador();
 		int edad= -10;
 		jugador.setEdad(edad);
-		assertEquals(edad, jugador.getEdad(), "Números negativos no permitidos");
+		assertEquals(jugador.getEdad(), 0);
 		
 	}
 	/**
@@ -146,7 +145,8 @@ guardado en mayusculas
 		Jugador jugador = new Jugador();
 		int edad= 5;
 		jugador.setEdad(edad);
-		assertEquals(edad, jugador.getEdad(), "Menor de edad no permitido");
+		
+		assertEquals(jugador.getEdad(), 0);
 		
 	}
 	
@@ -180,7 +180,7 @@ guardado en mayusculas
 		
 		 Jugador jug= new Jugador();
 		 
-		 String idioma= "Español";
+		 String idioma= "Espa�ol";
 		 jug.setIdioma(idioma);
 		 assertEquals(idioma, jug.getIdioma());
 	}
@@ -194,7 +194,7 @@ guardado en mayusculas
 		
 		 Jugador jug= new Jugador();
 		 
-		 String idioma= "Alemán";
+		 String idioma= "Aleman";
 		 jug.setIdioma(idioma);
 		 assertEquals(idioma, jug.getIdioma());
 	}
@@ -222,9 +222,9 @@ guardado en mayusculas
 		
 		 Jugador jug= new Jugador();
 		 
-		 String idioma= " ";
+		 String idioma="";
 		 jug.setIdioma(idioma);
-		 assertEquals(idioma, jug.getIdioma(),"Caracter introducido insuficiente");
+		 assertNull(jug.getIdioma());
 	}
 
 	/**
@@ -236,23 +236,23 @@ guardado en mayusculas
 		
 		 Jugador jug= new Jugador();
 		 
-		 String idioma= "Español";
+		 String idioma= "Espa�ol";
 		 jug.setIdioma(idioma);
 		 assertEquals(idioma, jug.getIdioma(),"El idioma introducido no es correcto.");
 	}
 	
 	//----------------------------Story 5 TESTS Aragon-------------------------------------------
 	
-		@Test
+	@Test
     //T00- Todo null. OUTPUT-->Error
     void tipoJugadorAllNull() {
 
        Jugador jugador = new Jugador();
        int edad=-1;
-       String nombre=null;
-       String idioma=null;
+       String nombre="";
+       String idioma="";
        
-
+       jugador.setNombreJugador(nombre);
        jugador.setIdioma(idioma);
        jugador.setEdad(edad);
        
@@ -289,8 +289,8 @@ guardado en mayusculas
 
         Jugador jugador = new Jugador();
         int edad=19;
-        String nombre=null;
-        String idioma="Español";
+        String nombre="";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -310,7 +310,7 @@ guardado en mayusculas
         Jugador jug = new Jugador();
         int edad=19;
         String nombre="Pepe";
-        String idioma=null;
+        String idioma="";
         
         jug.setNombreJugador(nombre);
         jug.setIdioma(idioma);
@@ -330,7 +330,7 @@ guardado en mayusculas
         Jugador jugador = new Jugador();
         int edad=8;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -350,7 +350,7 @@ guardado en mayusculas
         Jugador jugador = new Jugador();
         int edad=18;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -370,7 +370,7 @@ guardado en mayusculas
         Jugador jugador = new Jugador();
         int edad=24;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -390,7 +390,7 @@ guardado en mayusculas
         Jugador jugador = new Jugador();
         int edad=25;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -410,7 +410,7 @@ guardado en mayusculas
         Jugador jugador = new Jugador();
         int edad=35;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -428,7 +428,7 @@ guardado en mayusculas
         Jugador jug = new Jugador();
         int edad=36;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jug.setNombreJugador(nombre);
         jug.setIdioma(idioma);
@@ -448,7 +448,7 @@ guardado en mayusculas
         Jugador jug = new Jugador();
         int edad=70;
         String nombre="Pepe";
-        String idioma="Español";
+        String idioma="Espa�ol";
         
         jug.setNombreJugador(nombre);
         jug.setIdioma(idioma);
