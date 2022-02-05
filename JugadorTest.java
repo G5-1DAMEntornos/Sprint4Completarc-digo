@@ -100,6 +100,20 @@ class JugadorTest {
 		assertEquals(nombre, jugador.getNombreJugador(), "Campo nombre vacio");
 		
 	}
+	/**
+	 * STORY 7 SPRINT 4 Añade o actualiza los tests unitarios necesarios para que compruebe que el nombre es
+guardado en mayusculas
+	 */
+	@Test
+	void testSetNombreJugador8() {
+		Jugador jugador = new Jugador();
+		String nombre= "PEPITO";
+		jugador.setNombreJugador(nombre);
+		assertEquals(nombre, jugador.getNombreJugador());
+		
+	}
+	
+	
 	
 	/**
 	 * TC08 - Edad (Caracter)
@@ -238,7 +252,7 @@ class JugadorTest {
        String nombre=null;
        String idioma=null;
        
-       jugador.setNombreJugador(nombre);
+
        jugador.setIdioma(idioma);
        jugador.setEdad(edad);
        
@@ -256,7 +270,7 @@ class JugadorTest {
        Jugador jugador = new Jugador();
        int edad=-1;
        String nombre="Pepe";
-       String idioma="EspaÃ±ol";
+       String idioma="Español";
        
        jugador.setNombreJugador(nombre);
        jugador.setIdioma(idioma);
