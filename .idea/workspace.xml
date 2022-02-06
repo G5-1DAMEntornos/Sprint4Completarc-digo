@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90ef5dbe-4f7f-440a-886a-07b56af8333c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Equipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Equipo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EquipoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/EquipoTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AsignarEquipo.java" beforeDir="false" afterPath="$PROJECT_DIR$/AsignarEquipo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sprint4Completarc-digo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Sprint4Completarc-digo.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +33,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -49,6 +50,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643977571535</updated>
       <workItem from="1643977579317" duration="1589000" />
+      <workItem from="1644163466445" duration="2593000" />
     </task>
     <servers />
   </component>
