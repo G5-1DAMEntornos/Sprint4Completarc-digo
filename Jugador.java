@@ -6,13 +6,13 @@ public class Jugador {
 	private String idioma;
 
 	public Jugador () {
-		
+
 	}
 
 	public void setNombreJugador(String nombre) {
 
 		if (3<nombre.length() && nombre.length()<=20) {
-			
+
 
 			for(int i = 0 ; i <nombre.length() ; i++) {
 
@@ -31,18 +31,23 @@ public class Jugador {
 
 		if (edad>=18 && edad<=100) {
 
-			this.edad=edad;	
+			this.edad=edad;
 
-		} else { 
+		} else {
 			this.edad=0;}
 	}
 
 	public void setIdioma(String idioma) {
-		
-		if (idioma.equalsIgnoreCase("español")  || idioma.equalsIgnoreCase("inglés")|| idioma.equalsIgnoreCase("francés")|| idioma.equalsIgnoreCase("alemán" )
-				|| idioma.equalsIgnoreCase("ingles")|| idioma.equalsIgnoreCase("frances")|| idioma.equalsIgnoreCase("aleman")) {
-			this.idioma=idioma;
 
+		if (idioma.equalsIgnoreCase("español")
+				|| idioma.equalsIgnoreCase("inglés")
+				|| idioma.equalsIgnoreCase("francés")
+				|| idioma.equalsIgnoreCase("alemán" )
+				|| idioma.equalsIgnoreCase("ingles")
+				|| idioma.equalsIgnoreCase("frances")
+				|| idioma.equalsIgnoreCase("aleman"))
+		{
+			this.idioma=idioma;
 		} else {
 			this.idioma=null;
 		}
@@ -57,21 +62,28 @@ public class Jugador {
 	public int getEdad() {
 		return edad;
 	}
-	
-	 public String tipoJugador(int edad){
-        int ed=edad;
-        String tipo=null;
-        
-            if(18<=ed && ed<=24){
-                tipo="Junior";
-            }
-            if(25<=ed && ed<=35){
-            	tipo="Senior";
-            }
-            if(ed>35){
-            	tipo="Master";
-            }
-        return tipo;
-    }
-	
+
+	public String tipoJugador(int edad){
+		String tipo=null;
+
+		int edadMinimaJunior = 18;
+		int edadMaximaJunior = 24;
+		int edadMinimaSenior = 25;
+		int edadMaximaSenior = 35;
+		int edadMinimaMaster = 36;
+
+		if(edadMinimaJunior <=edad && edad<= edadMaximaJunior){
+			tipo="Junior";
+		}
+
+		if(edadMinimaSenior <=edad && edad<= edadMaximaSenior){
+			tipo="Senior";
+		}
+
+		if(edad>= edadMinimaMaster){
+			tipo="Master";
+		}
+		return tipo;
+	}
+
 }
