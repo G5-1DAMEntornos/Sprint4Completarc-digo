@@ -23,8 +23,7 @@ public class Equipo {
 	public int getRanking() {
 		return ranking;
 	}
-
-
+	
 	public String categoriaEquipo() {
 	String categoria = "";
 	   if(nombreEquipo!=null && ranking!=-1) {
