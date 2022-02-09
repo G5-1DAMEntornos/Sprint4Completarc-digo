@@ -24,7 +24,7 @@ class JugadorTest {
 
     }
     /**
-     * TC02 - Nombre (Numero carÃ¡cteres < 4)
+     * TC02 - Nombre (Numero Caracteres < 4)
      */
     @Test
     void testSetNombreJugador2() {
@@ -36,7 +36,7 @@ class JugadorTest {
     }
 
     /**
-     * TC03 - Nombre (Numero carÃ¡cteres minimo)
+     * TC03 - Nombre (Numero Caracteres minimo)
      */
     @Test
     void testSetNombreJugador3() {
@@ -48,7 +48,7 @@ class JugadorTest {
     }
 
     /**
-     * TC04 - Nombre (Numero carÃ¡cteres maximo)
+     * TC04 - Nombre (Numero Caracteres maximo)
      */
     @Test
     void testSetNombreJugador4() {
@@ -60,7 +60,7 @@ class JugadorTest {
     }
 
     /**
-     * TC05 - Nombre (Numero carÃ¡cteres >20)
+     * TC05 - Nombre (Numero Caracteres >20)
      */
     @Test
     void testSetNombreJugador5() {
@@ -160,7 +160,7 @@ class JugadorTest {
 
     }
     /**
-     * TC13 - Idioma (EspaÃ±ol). Mediante esta prueba, introduciremos un idioma valido. El test debera ser valido
+     * TC13 - Idioma (Español). Mediante esta prueba, introduciremos un idioma valido. El test debera ser valido
      */
 
     @Test
@@ -186,7 +186,7 @@ class JugadorTest {
         assertEquals(idioma, jug.getIdioma());
     }
     /**
-     * TC15 - Idioma (FrancÃƒÂ©s). Mediante esta prueba, introduciremos un idioma valido. El test debera ser vÃƒÂ¡lido
+     * TC15 - Idioma (Frances). Mediante esta prueba, introduciremos un idioma valido. El test debera ser vÃƒÂ¡lido
      */
     @Test
     void testSetIdioma15() {
@@ -211,7 +211,7 @@ class JugadorTest {
         assertNull(jug.getIdioma());
     }
     /**
-     * TC17 - Idioma (EspaÃ±ol). Mediante esta prueba, introduciremos un idioma distinto de los disponibles. El test debera ser no valido
+     * TC17 - Idioma (Español). Mediante esta prueba, introduciremos un idioma distinto de los disponibles. El test debera ser no valido
      */
 
     @Test
