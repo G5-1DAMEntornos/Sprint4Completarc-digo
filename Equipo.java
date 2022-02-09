@@ -53,19 +53,6 @@ public class Equipo {
 	}
 
 
-	public String categoriaEquipo(String categoria, String primera,String segunda, String tercera) {
-
-
-		if(ranking>=7 && ranking<=10) {
-			categoria=primera;
-		}else if(ranking<=6 && ranking>=3){
-			categoria=segunda;
-		}
-		return categoria;
-	}
-
-
-
 	public String categoriaEquipo() {
 	String categoria = "";
 	   if(nombreEquipo!=null && ranking!=-1) {

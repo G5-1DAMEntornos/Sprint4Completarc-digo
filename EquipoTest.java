@@ -104,6 +104,18 @@ class EquipoTest {
 		equipo.setNombreEquipo(nombre);
 		assertEquals(null,equipo.getNombreEquipo(),"El nombre del equipo no puede estar vacio");
 	}
+	/**
+	 * STORY 7 SPRINT 4 Añade o actualiza los tests unitarios necesarios para que compruebe que el nombre es
+guardado en mayusculas
+	 */
+	@Test
+	void testSetNombreJugador8() {
+		Equipo equipo = new Equipo();
+		String nombre= "BARCELONA";
+		equipo.setNombreEquipo(nombre);
+		assertEquals(nombre, equipo.getNombreEquipo());
+		
+	}
 
 	/**
 	 * TC7 - Ranking (Numero negativo) Introduciremos un numero negativo en el campo de ranking,
