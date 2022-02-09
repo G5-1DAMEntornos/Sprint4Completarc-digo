@@ -18,7 +18,7 @@ class EquipoTest {
 		Equipo equ=new Equipo();
 		String nombre="-100";
 		equ.setNombreEquipo(nombre);
-		assertEquals(nombre,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
+		assertEquals(null,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
 	}
 
 	/**
@@ -32,7 +32,7 @@ class EquipoTest {
 		Equipo equ=new Equipo();
 		String nombre="10";
 		equ.setNombreEquipo(nombre);
-		assertEquals(nombre,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
+		assertEquals(null,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
 	}
 
 	/**
@@ -51,7 +51,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "Equ";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre tiene que ser mas largo de 4 caracteres");
+		assertEquals(null,equipo.getNombreEquipo(),"El nombre tiene que ser mas largo de 4 caracteres");
 	}
 
 	/**
@@ -90,7 +90,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "Equipo de prueba caracteres largos";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre del equipo no puede tener mas de 20 caracteres");
+		assertEquals(null,equipo.getNombreEquipo(),"El nombre del equipo no puede tener mas de 20 caracteres");
 	}
 
 	/**
@@ -102,7 +102,7 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		String nombre = "";
 		equipo.setNombreEquipo(nombre);
-		assertEquals(nombre,equipo.getNombreEquipo(),"El nombre del equipo no puede estar vacio");
+		assertEquals(null,equipo.getNombreEquipo(),"El nombre del equipo no puede estar vacio");
 	}
 
 	/**
@@ -115,8 +115,8 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		int rank = -2;
 		equipo.setRanking(rank);
-		//assertEquals(null,equipo.getRanking(),"El ranking del equipo no puede ser negativo");
-		assertNull(equipo.getRanking());
+		assertEquals(0,equipo.getRanking(),"El ranking del equipo no puede ser negativo");
+		//assertNull(equipo.getRanking());
 	}
 
 	/**
@@ -129,8 +129,8 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		char rank = 'a';
 		equipo.setRanking(rank);
-		//assertEquals(null,equipo.getRanking(),"El ranking del equipo no puede contener caracteres");
-		assertNull(equipo.getRanking());
+		assertEquals(0,equipo.getRanking(),"El ranking del equipo no puede contener caracteres");
+		//assertNull(equipo.getRanking());
 
 	}
 
@@ -170,8 +170,8 @@ class EquipoTest {
 		Equipo equipo = new Equipo();
 		int rank= 0;
 		equipo.setRanking(rank);
-		//assertEquals(0,equipo.getRanking(),"El ranking del equipo no puede estar vacio");
-		assertNull(equipo.getRanking());
+		assertEquals(0,equipo.getRanking(),"El ranking del equipo no puede estar vacio");
+		//assertNull(equipo.getRanking());
 	}
 
 	/**
