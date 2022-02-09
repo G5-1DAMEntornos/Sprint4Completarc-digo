@@ -18,7 +18,7 @@ class JugadorTest {
 	@Test
 	void testSetNombreJugador1() {
 		Jugador jugador = new Jugador();
-		String nombre= "hola2";
+		String nombre= "-32";
 		jugador.setNombreJugador(nombre);
 		assertNull(jugador.getNombreJugador());
 		
