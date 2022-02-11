@@ -13,7 +13,7 @@ import org.junit.jupiter.api.Test;
 class AsignarEquipoTest {
 
 	/*TC1 - Asignar jugador que no exista. 
-	 * Debe dar errorrrr
+	 * Debe dar error
 	*/
 
 	@Test
