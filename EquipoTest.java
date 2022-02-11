@@ -34,6 +34,15 @@ class EquipoTest {
 		equ.setNombreEquipo(nombre);
 		assertEquals(null,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
 	}
+	
+	
+	@Test
+	void testSetNombreEquipoNull() {
+		Equipo equ=new Equipo();
+		String nombre=null;
+		equ.setNombreEquipo(nombre);
+		assertEquals(null,equ.getNombreEquipo(),"No se pueden introducir caracteres n�mericos para el nombre");
+	}
 
 	/**
 	 *
