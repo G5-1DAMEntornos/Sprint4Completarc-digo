@@ -172,7 +172,7 @@ class AsignarEquipoTest {
 	 */
 
 	@Test
-	void SetEquipoNull(){
+	void setEquipoNull(){
 		//Creacion objeto AsignarEquipo
 		AsignarEquipo asignarequipo = new AsignarEquipo();
 
@@ -190,7 +190,7 @@ class AsignarEquipoTest {
 	 */
 
 	@Test
-	void SetEquipoValido(){
+	void setEquipoValido(){
 		AsignarEquipo new_equipo = new AsignarEquipo();
 		Equipo equipo = new Equipo();
 
@@ -212,7 +212,7 @@ class AsignarEquipoTest {
 	 */
 
 	@Test
-	void SetEquipoNomInvalido(){
+	void setEquipoNomInvalido(){
 		AsignarEquipo new_equipo = new AsignarEquipo();
 		Equipo equipo = new Equipo();
 
@@ -232,7 +232,7 @@ class AsignarEquipoTest {
 	 */
 
 	@Test
-	void SetEquipoNoNom(){
+	void setEquipoNoNom(){
 		AsignarEquipo new_equipo = new AsignarEquipo();
 		Equipo equipo = new Equipo();
 
@@ -252,7 +252,7 @@ class AsignarEquipoTest {
 	 */
 
 	@Test
-	void SetEquipoRankInvalido(){
+	void setEquipoRankInvalido(){
 		AsignarEquipo new_equipo = new AsignarEquipo();
 		Equipo equipo = new Equipo();
 
@@ -272,7 +272,7 @@ class AsignarEquipoTest {
 	 */
 	
 	@Test
-	void SetEquipoNoRank(){
+	void setEquipoNoRank(){
 		AsignarEquipo new_equipo = new AsignarEquipo();
 		Equipo equipo = new Equipo();
 
