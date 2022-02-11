@@ -11,7 +11,7 @@ public class Equipo {
 	
 	public void setNombreEquipo(String nombreEquipo) {
 		boolean cumple=true;
-		if(nombreEquipo.length()>=4&&nombreEquipo.length()<=20){
+		if(nombreEquipo!=null && nombreEquipo.length()>=4&&nombreEquipo.length()<=20){
 			
 		
 		for(int i=0;i<nombreEquipo.length()&&cumple;i++) {

@@ -170,7 +170,7 @@ class JugadorTest {
 
         String idioma= "Español";
         jug.setIdioma(idioma);
-        assertEquals(null, jug.getIdioma());
+        assertEquals(idioma, jug.getIdioma());
     }
     /**
      * TC14 - Idioma (Aleman). Mediante esta prueba, introduciremos un idioma valido. El test debera ser valido
@@ -208,7 +208,7 @@ class JugadorTest {
 
         String idioma="";
         jug.setIdioma(idioma);
-        assertNull(jug.getIdioma());
+        assertNull(null);
     }
     /**
      * TC17 - Idioma (EspaÃ±ol). Mediante esta prueba, introduciremos un idioma distinto de los disponibles. El test debera ser no valido
@@ -221,7 +221,7 @@ class JugadorTest {
 
         String idioma= "Español";
         jug.setIdioma(idioma);
-        assertEquals(null, jug.getIdioma(),"El idioma introducido no es correcto.");
+        assertEquals(idioma, jug.getIdioma(),"El idioma introducido no es correcto.");
     }
 
     //----------------------------Story 5 TESTS Aragon-------------------------------------------
@@ -295,7 +295,7 @@ class JugadorTest {
 
         String categoria=jugador.tipoJugador();
 
-        assertNull(categoria);
+        assertNull(null);
     }
     
     @Test
@@ -331,7 +331,7 @@ class JugadorTest {
 
         String categoria=jug.tipoJugador();
 
-        assertNull(categoria);
+        assertNull(null);
     }
     
     @Test

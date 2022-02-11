@@ -11,7 +11,7 @@ public class Jugador {
 
 	public void setNombreJugador(String nombre) {
 
-		if (3<nombre.length() && nombre.length()<=20) {
+		if (nombre!=null&&3<nombre.length() && nombre.length()<=20) {
 
 
 			for(int i = 0 ; i <nombre.length() ; i++) {
@@ -39,15 +39,18 @@ public class Jugador {
 
 	public void setIdioma(String idioma) {
 
-		if (idioma.equalsIgnoreCase("español")
-				|| idioma.equalsIgnoreCase("inglés")
-				|| idioma.equalsIgnoreCase("francés")
-				|| idioma.equalsIgnoreCase("alemán" )
+		if(idioma!=null) {
+		
+		if (idioma.equalsIgnoreCase("espa�ol")
+				|| idioma.equalsIgnoreCase("ingls")
+				|| idioma.equalsIgnoreCase("frances")
+				|| idioma.equalsIgnoreCase("aleman" )
 				|| idioma.equalsIgnoreCase("ingles")
 				|| idioma.equalsIgnoreCase("frances")
 				|| idioma.equalsIgnoreCase("aleman"))
 		{
 			this.idioma=idioma;
+		}
 		} else {
 			this.idioma=null;
 		}

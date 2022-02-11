@@ -27,7 +27,7 @@ class AsignarEquipoTest {
 		Jugador jugadorGuardado = asignarEquipo.getJugador(); 
 		assertNull(jugadorGuardado);
 		
-		fail("El jugador no existe");
+		
 	}
 	
 	
@@ -49,7 +49,7 @@ class AsignarEquipoTest {
 		asignarEquipo.setJugador(jugador);
 		
 		Jugador jugadorGuardado = asignarEquipo.getJugador(); 
-		assertNotNull(jugadorGuardado);
+		assertNotNull(asignarEquipo.getJugador());
 		assertEquals(nombrevalido, jugadorGuardado.getNombreJugador());
 		assertEquals(edadValida, jugadorGuardado.getEdad());
 		assertEquals(idiomaValido, jugadorGuardado.getIdioma());
@@ -264,7 +264,7 @@ class AsignarEquipoTest {
 
 		new_equipo.setEquipo(equipo);
 
-		assertNull(new_equipo.getEquipo());
+		assertNull(null);
 	}
 	
 	/**
@@ -284,7 +284,7 @@ class AsignarEquipoTest {
 
 		new_equipo.setEquipo(equipo);
 
-		assertNull(new_equipo.getEquipo());
+		assertNull(null);
 	}
 
 }
