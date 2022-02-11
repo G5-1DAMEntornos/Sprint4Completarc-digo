@@ -1,4 +1,4 @@
-package org.junit.jupitar.api;
+
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 
@@ -168,7 +168,7 @@ class JugadorTest {
 
         Jugador jug= new Jugador();
 
-        String idioma= "EspaÃ±ol";
+        String idioma= "Español";
         jug.setIdioma(idioma);
         assertEquals(idioma, jug.getIdioma());
     }
@@ -219,7 +219,7 @@ class JugadorTest {
 
         Jugador jug= new Jugador();
 
-        String idioma= "EspaÃ±ol";
+        String idioma= "Español";
         jug.setIdioma(idioma);
         assertEquals(idioma, jug.getIdioma(),"El idioma introducido no es correcto.");
     }
@@ -269,7 +269,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=-1;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -287,7 +287,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=19;
         String nombre=null;
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -305,7 +305,7 @@ class JugadorTest {
     	Jugador jugador = new Jugador();
     	int edad=19;
     	String nombre="";
-    	String idioma="EspaÃ±ol";
+    	String idioma="Español";
 
     	jugador.setNombreJugador(nombre);
     	jugador.setIdioma(idioma);
@@ -359,7 +359,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=8;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -377,7 +377,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=18;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -395,7 +395,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=24;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -413,7 +413,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=25;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -431,7 +431,7 @@ class JugadorTest {
         Jugador jugador = new Jugador();
         int edad=35;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jugador.setNombreJugador(nombre);
         jugador.setIdioma(idioma);
@@ -447,7 +447,7 @@ class JugadorTest {
         Jugador jug = new Jugador();
         int edad=36;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jug.setNombreJugador(nombre);
         jug.setIdioma(idioma);
@@ -465,7 +465,7 @@ class JugadorTest {
         Jugador jug = new Jugador();
         int edad=70;
         String nombre="Pepe";
-        String idioma="EspaÃ±ol";
+        String idioma="Español";
 
         jug.setNombreJugador(nombre);
         jug.setIdioma(idioma);

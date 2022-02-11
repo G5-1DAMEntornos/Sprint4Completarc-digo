@@ -63,7 +63,7 @@ public class Jugador {
 		return edad;
 	}
 
-	public String tipoJugador(int edad){
+	public String tipoJugador(){
 		String tipo=null;
 
 		int edadMinimaJunior = 18;

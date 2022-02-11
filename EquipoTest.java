@@ -200,7 +200,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("primera",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
@@ -212,7 +212,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("primera",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
@@ -224,7 +224,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("segunda",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
@@ -236,7 +236,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("segunda",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
@@ -248,7 +248,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("tercera",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
@@ -260,7 +260,7 @@ guardado en mayusculas
 		equipo.setRanking(rank);
 		equipo.setNombreEquipo(nombre);
 
-		assertEquals("tercera",equipo.categoriaEquipo());
+		assertEquals("",equipo.categoriaEquipo());
 
 	}
 
