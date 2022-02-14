@@ -1,23 +1,32 @@
 import java.util.Iterator;
 
+/*
+ *Esta clase sirve para crear un jugador
+ * @author: Equipo5
+ * @version: 14/02/2022 
+ */
+
 public class Jugador {
     private String nombre;
     private int edad;
     private String idioma;
 
+    /*
+     *Contructor de Jugador 
+     */
     public Jugador () {
 
     }
-
+    
+    /*
+     * Metodo que asigna un nombre al Jugador
+     * @param nombre. String de nombre del Jugador
+     */
     public void setNombreJugador(String nombre) {
-
+    	
         if (nombre!=null || nombre==""){
-
             if(3<nombre.length() && nombre.length()<=20) {
-
-
                 for(int i = 0 ; i <nombre.length() ; i++) {
-
                     if (!(nombre.toLowerCase().charAt(i)>='a' && nombre.toLowerCase().charAt(i)<='z')){
                         this.nombre=null;
                     }else {
@@ -30,9 +39,14 @@ public class Jugador {
             this.nombre=null;
         }
     }
-
+    
+    /*
+     * Metodo que asigna una Edad al Jugador
+     * @param edad. Int de edad del Jugador
+     */
     public void setEdad(int edad) {
-
+    	
+    	/*Edad comprendida entre*/
         if (edad>=18 && edad<=100) {
 
             this.edad=edad;
@@ -40,7 +54,11 @@ public class Jugador {
         } else {
             this.edad=0;}
     }
-
+    
+    /*
+     * Metodo que asigna un idioma al Jugador
+     * @param idioma. String de nombre del Jugador
+     */
     public void setIdioma(String idioma) {
 
         if(idioma!=null) {
@@ -60,16 +78,34 @@ public class Jugador {
         }
     }
 
+    /*
+     * Metodo que devuelve el Idioma de Jugador
+     * @return Idioma de Jugador
+     */
     public String getIdioma() {
         return idioma;
     }
+    
+    /*
+     * Metodo que devuelve el nombre del Jugador
+     * @return nombre de Jugador
+     */
     public String getNombreJugador() {
         return nombre;
     }
+    
+    /*
+     * Metodo que devuelve la edad de Jugador
+     * @return edad de Jugador
+     */
     public int getEdad() {
         return edad;
     }
-
+    
+    /*
+     * Metodo que devuelve la categoria de Jugador
+     * @return categoria de Jugador
+     */
     public String tipoJugador(){
         String tipo=null;
 
