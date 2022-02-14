@@ -1,6 +1,4 @@
-import java.util.Iterator;
-
-/*
+/**
  *Esta clase sirve para crear un jugador
  * @author: Equipo5
  * @version: 14/02/2022 
@@ -11,14 +9,14 @@ public class Jugador {
     private int edad;
     private String idioma;
 
-    /*
+    /**
      *Contructor de Jugador 
      */
     public Jugador () {
 
     }
     
-    /*
+    /**
      * Metodo que asigna un nombre al Jugador
      * @param nombre. String de nombre del Jugador
      */
@@ -40,13 +38,12 @@ public class Jugador {
         }
     }
     
-    /*
+    /**
      * Metodo que asigna una Edad al Jugador
      * @param edad. Int de edad del Jugador
      */
     public void setEdad(int edad) {
     	
-    	/*Edad comprendida entre*/
         if (edad>=18 && edad<=100) {
 
             this.edad=edad;
@@ -55,7 +52,7 @@ public class Jugador {
             this.edad=0;}
     }
     
-    /*
+    /**
      * Metodo que asigna un idioma al Jugador
      * @param idioma. String de nombre del Jugador
      */
@@ -78,7 +75,7 @@ public class Jugador {
         }
     }
 
-    /*
+    /**
      * Metodo que devuelve el Idioma de Jugador
      * @return Idioma de Jugador
      */
@@ -86,7 +83,7 @@ public class Jugador {
         return idioma;
     }
     
-    /*
+    /**
      * Metodo que devuelve el nombre del Jugador
      * @return nombre de Jugador
      */
@@ -94,7 +91,7 @@ public class Jugador {
         return nombre;
     }
     
-    /*
+    /**
      * Metodo que devuelve la edad de Jugador
      * @return edad de Jugador
      */
@@ -102,7 +99,7 @@ public class Jugador {
         return edad;
     }
     
-    /*
+    /**
      * Metodo que devuelve la categoria de Jugador
      * @return categoria de Jugador
      */
